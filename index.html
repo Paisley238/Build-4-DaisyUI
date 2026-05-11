@@ -20,14 +20,21 @@
 
   <body>
     <!-- Your sections go here -->
+    <!-- Dark mode checkbox -->
+    <input type="checkbox" id="dark-mode-toggle" class="mode-switch" />
+    <label for="dark-mode-toggle" class="theme-btn">
+      <span class="moon">🌙</span>
+      <span class="sun">☀️</span>
+    </label>
+
     <div class="hero min-h-screen" style="background-image: url(https://i.ytimg.com/vi/AcqZRaNr_pQ/maxresdefault.jpg)">
       <div class="hero-overlay"><br /></div>
       <div class="hero-content text-neutral-content text-center">
         <div class="max-w-md">
-          <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+          <h1 class="mb-5 text-5xl font-bold">Guacamelee:</h1>
           <p class="mb-5">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In
-            deleniti eaque aut repudiandae et a id nisi.
+            "The ultimate Metroidvania-Brawler. Punch, kick, and pile-drive your way through a vibrant world inspired by
+            Mexican culture."
           </p>
           <a href="https://www.youtube.com/watch?v=KA_LayTuoRo" target="_blank" class="trailer-button">
             <svg
@@ -42,45 +49,62 @@
                 fill="currentColor"
                 d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80L0 432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
             </svg>
-            Trailer
+            Watch Trailer
           </a>
         </div>
       </div>
     </div>
+    <!--Social Proof goes here-->
+    <div class="review-card">
+      <!-- Avatar & Badge Header -->
+      <div class="flex-row">
+        <img src="https://pbs.twimg.com/media/GFg9q5tXQAA10sS.jpg" alt="IGN Rating: 9/10." class="avatar-sm" />
+        <span class="badge score-badge">9/10 - Amazing</span>
+      </div>
+      <blockquote>
+        "Guacamelee flexes its muscles and proves the strength and everlasting effect of the Metroidvania formula."
+      </blockquote>
+
+      <cite>— IGN</cite>
+    </div>
+
     <!--Cards go here-->
-    <div class="card bg-base-100 w-96 shadow-sm">
-      <figure>
-        <img
-          src="https://www.gamerevolution.com/wp-content/uploads/sites/2/gallery/307_guacamelee-stce-screenshots/screenshot_M.jpg"
-          alt="Two players beating up an arena full of enemies" />
-      </figure>
-      <div class="card-body">
-        <h2 class="card-title">Feature: Martial Artistry</h2>
-        <p>Non-Stop Fighting Action. An extensive move list, advanced combo engine, and anti-gravity grabs</p>
-        <div class="card-actions justify-end"></div>
+    <div class="card-container">
+      <div class="card bg-base-100 w-96 shadow-sm">
+        <figure>
+          <img
+            src="https://www.gamerevolution.com/wp-content/uploads/sites/2/gallery/307_guacamelee-stce-screenshots/screenshot_M.jpg"
+            alt="Two players beating up an arena full of enemies" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Feature: Martial Artistry</h2>
+          <p>Non-Stop Fighting Action. An extensive move list, advanced combo engine, and anti-gravity grabs</p>
+          <div class="card-actions justify-end"></div>
+        </div>
       </div>
-    </div>
-    <div class="card bg-base-100 w-96 shadow-sm">
-      <figure>
-        <img
-          src="https://a.storyblok.com/f/106368/1280x720/157ea176a5/guacameleestce_screenshot_006.jpg/m/fit-in/3840x2160/filters:quality(90)"
-          alt="A man sprinting into a church, scaring a flock of birds in the process." />
-      </figure>
-      <div class="card-body">
-        <h2 class="card-title">Feature: A Vibrant World</h2>
-        <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-        <div class="card-actions justify-end"></div>
+      <div class="card bg-base-100 w-96 shadow-sm">
+        <figure>
+          <img
+            src="https://a.storyblok.com/f/106368/1280x720/157ea176a5/guacameleestce_screenshot_006.jpg/m/fit-in/3840x2160/filters:quality(90)"
+            alt="A man sprinting into a church, scaring a flock of birds in the process." />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Feature: A Vibrant World</h2>
+          <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+          <div class="card-actions justify-end"></div>
+        </div>
       </div>
-    </div>
-    <div class="card bg-base-100 w-96 shadow-sm">
-      <figure></figure>
-      <img
-        src="https://assetsio.gnwcdn.com/guacstce2.jpg?width=1200&height=600&fit=crop&enable=upscale&auto=webp"
-        alt="An arena in Guacamelee with two players fighting the creatures." />
-      <div class="card-body">
-        <h2 class="card-title">Feature: Local Multiplayer</h2>
-        <p>Drop in/out 4-Player local co-operative play, featuring independent dimension swapping</p>
-        <div class="card-actions justify-end"></div>
+      <div class="card bg-base-100 w-96 shadow-sm">
+        <figure>
+          <img
+            src="https://assetsio.gnwcdn.com/guacstce2.jpg?width=1200&height=600&fit=crop&enable=upscale&auto=webp"
+            alt="An arena in Guacamelee with two players fighting the creatures." />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Feature: Local Multiplayer</h2>
+          <p>Drop in/out 4-Player local co-operative play, featuring independent dimension swapping</p>
+          <div class="card-actions justify-end"></div>
+        </div>
       </div>
     </div>
   </body>
