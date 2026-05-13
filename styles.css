@@ -32,6 +32,12 @@ body {
 .card {
   background-color: var(--card-bg) !important;
 }
+.card figure img {
+  width: 100px;
+  height: 100%;
+  padding: 0.5rem;
+  display: block;
+}
 
 .trailer-button {
   display: inline-flex;
@@ -39,8 +45,8 @@ body {
   background-color: #ffd700;
   color: #000000;
   border: none;
-  padding: 8px 16px;
-  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
   cursor: pointer;
   font-weight: bold;
   transition: background 0.2s;
@@ -62,7 +68,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  padding: 20px;
+  padding: 1.25rem;
 }
 img {
   max-width: 30%;
